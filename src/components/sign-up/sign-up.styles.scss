@@ -1,0 +1,12 @@
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+
+  .title {
+    margin: 10px 0;
+  }
+}
+
+h1 { text-transform: capitalize; font-size: 2rem; }
+span { text-transform: capitalize; font-size: 1rem; }
