@@ -19,8 +19,8 @@
       font-weight: bold;
 
       span {
-      font-family: "NewYork";
-      // font-weight: normal;
+        font-family: "NewYork";
+        // font-weight: normal;
       }
 
       &:last-child {
@@ -32,7 +32,6 @@
   .total {
     margin-top: 30px;
     margin-left: auto;
-  }
 
     .total-span {
       text-transform: capitalize;
@@ -40,4 +39,17 @@
       font-weight: bold;
       font-family: "Euclid";
     }
+  }
+
+  .test-warning {
+    text-align: center;
+    margin: 40px 0 0 0;
+    font-size: 24px;
+    color: red;
+    font-family: "Euclid";
+    text-transform: capitalize;
+  }
+  button {
+    margin: 50px 0 0 auto;
+  }
 }
