@@ -1,12 +1,12 @@
-import "./App.css";
+// import "./App.css";
 import React from "react";
 
 import { Routes, Route, Navigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
 
-import Header from "./components/header/header.component";
 
+import Header from "./components/header/header.component";
 import Homepage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up";
@@ -14,6 +14,8 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 import CollectionsOverview from "./components/collections-overview/collections-overview.component";
 import CollectionPage from "./pages/collection/collection.component";
 import Footer from "./components/footer/footer.component";
+
+import { GlobalStyle } from "./components/global.styles";
 
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/user/user.selectors";
@@ -47,6 +49,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <GlobalStyle />
         <Header />
         <Routes>
           <Route exact path="/" element={<Homepage />} />

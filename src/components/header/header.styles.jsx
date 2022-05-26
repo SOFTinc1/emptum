@@ -10,21 +10,48 @@ const OptionContainerStyles = css`
 
 export const HeaderContainer = styled.div`
   height: 70px;
+  padding: 0 10px 0 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0px;
+  box-shadow:0 10px 20px -10px rgba(0, 0, 0, 0.4);
+
+  @media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+  }
+  
 `;
 
 export const LogoContainer = styled(Link)`
   height: 100%;
   width: 20%;
   padding: 25px;
+
+  @media screen and (max-width: 800px) {
+    width: 10%;
+    padding: 0;
+  }
+  // @media screen and (max-width: 1100px) {
+  //   width: 20%;
+  //   padding: 0;
+  // }
 `;
 
 export const Logo = styled.img`
   width: 20%;
-  margin: -0.7rem 0 0 0;
+  margin: -0.8rem 0 0 0;
+
+  @media screen and (max-width: 800px) {
+    margin: 0;
+    width: 100%
+  }
+  // @media screen and (max-width: 1100px) {
+  //   width: 20%;
+  //   margin: 0rem 0 0 0;
+  // }
 `;
 
 export const OptionsContainer = styled.div`
@@ -33,6 +60,10 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
 `;
 
 export const OptionLink = styled(Link)`
@@ -41,4 +72,5 @@ export const OptionLink = styled(Link)`
 
 export const OptionDiv = styled.div`
   ${OptionContainerStyles}
+  text-transform: capitalize;
 `;
