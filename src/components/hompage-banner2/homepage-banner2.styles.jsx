@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import BackgroundImage from "../../assets/images/b.jpg";
 
 
 
 export const HomepageBanner2Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url(../../assets/images/b.jpg);
+  background-image: url(${BackgroundImage});
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -22,7 +23,7 @@ export const BackgroundOverlay = styled.div`
   margin: -40px 0 0 0;
 
   @media screen and (max-width: 800px) {
-    // padding: 0 2rem 0 2rem;
+    margin: -20px 0 0 0;
   }
 `;
 
